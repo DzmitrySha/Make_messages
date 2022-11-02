@@ -138,10 +138,18 @@ category = "dev"
 optional = false
 python-versions = ">=3.7"
 
+[[package]]
+name = "xlsx2csv"
+version = "0.8.0"
+description = "xlsx to csv converter"
+category = "main"
+optional = false
+python-versions = "*"
+
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "69c13d93e57fa39f0a330967091e3a1ec85e7cc975ac84093c042b9aca1942c1"
+content-hash = "31ab65c89257d835f518b7483e36536252d6506b85a79c95839e64ef831f7dc9"
 
 [metadata.files]
 attrs = [
@@ -195,4 +203,8 @@ pytest = [
 tomli = [
     {file = "tomli-2.0.1-py3-none-any.whl", hash = "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc"},
     {file = "tomli-2.0.1.tar.gz", hash = "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"},
+]
+xlsx2csv = [
+    {file = "xlsx2csv-0.8.0-py3-none-any.whl", hash = "sha256:6c509c08bb60736c09ea636082344f92a53aad1c760ed19abe2164992de4fa04"},
+    {file = "xlsx2csv-0.8.0.tar.gz", hash = "sha256:2c268e509b7766ca4a24f2f36302e918705c5ead2fcde3f4bd5f1ca6152f7e2c"},
 ]

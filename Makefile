@@ -19,6 +19,9 @@ test-coverage:
 lint:
 	poetry run flake8 make_messages
 
+run:
+	poetry run make-messages -h
+
 selfcheck:
 	poetry check
 

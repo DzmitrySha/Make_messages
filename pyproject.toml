@@ -1,12 +1,10 @@
 [tool.poetry]
 name = "make-messages"
 version = "0.1.0"
-description = "Make messages from .xlsx files"
+description = "Make messages"
 authors = ["DzmitrySha <ravenbydev@gmail.com>"]
 readme = "README.md"
-packages = [
-    {include = "make_messages"}
-]
+packages = [{include = "make_messages"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -21,4 +19,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-gendiff = "make_messages.scripts.make_messages:main"
+make-messages = "make_messages.scripts.messages:main"

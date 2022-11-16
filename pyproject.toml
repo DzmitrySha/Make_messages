@@ -21,4 +21,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-make-messages = "make_messages.scripts.messages:main"
+make-messages = "make_messages.scripts.messages_script:main"

@@ -22,12 +22,9 @@ def make_messages_(source_path, output):
             parent = row[1]
             child = row[2]
             message = row[3]
-            new_mess = message.replace(
-                '@parent', parent
-            ).replace(
-                '@child', child
-            )
-            messages.append(comment + "\n" + new_mess)
+            message = message.replace('@parent', parent)
+            message = message.replace('@child', child)
+            messages.append(comment + "\n" + message)
 
     output_filepath = os.path.join(os.getcwd(), output, TXT_FILENAME)
 

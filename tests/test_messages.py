@@ -6,7 +6,7 @@ import tempfile
 from make_messages.messages import make_messages_
 
 
-FIXTURES_FOLDER = "fixtures"
+FIXTURES_FOLDER = "tests/fixtures"
 XLSX_FILENAME = "mmtest.xlsx"
 TXT_FILENAME = "messages.txt"
 

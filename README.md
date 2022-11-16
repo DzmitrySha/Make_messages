@@ -1,3 +1,5 @@
+[![workflow](https://github.com/DzmitrySha/Make_messages/actions/workflows/pytest_lint.yml/badge.svg)](https://github.com/DzmitrySha/Make_messages/actions/workflows/pytest_lint.yml)
+
 # Make messages
 
 Make messages from special .xlsx file with table of last names, parent names, child names and template message. Returns a list of unique messages with every pair of parent and child names inside.

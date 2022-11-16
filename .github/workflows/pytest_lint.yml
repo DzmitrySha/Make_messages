@@ -1,0 +1,30 @@
+name: Lint and Tests
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 4        
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      run: |
+        pip install poetry
+        make install
+    - name: Analysing the code with pylint
+      run: |
+        make lint
+    - name: Run Tests
+      run: |
+        make test
